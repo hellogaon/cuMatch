@@ -9,6 +9,7 @@ cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd ..
 
 . ./scripts/vars.sh
+. ./scripts/LSQB_env.sh
 
 if [ ! -d "${LSQB_DOWNLOAD_PATH}" ]; then
     mkdir -p "${LSQB_DOWNLOAD_PATH}"

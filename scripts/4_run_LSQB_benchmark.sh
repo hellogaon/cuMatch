@@ -7,6 +7,7 @@ cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd ..
 
 . ./scripts/vars.sh
+. ./scripts/LSQB_env.sh
 
 QUERY_IDS=("1-short" "2" "3" "4" "5" "6" "7" "8" "9")
 REPEAT_TIMES=1

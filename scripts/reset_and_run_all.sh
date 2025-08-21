@@ -8,8 +8,9 @@ cd ..
 
 . ./scripts/vars.sh
 
-SFs=( 0.1 )
-# SFs=( 0.1 1 10 100 1000 )
+SFs=( 0.1 ) # Test
+# SFs=( 100 1000 ) # In paper
+# SFs=( 1 10 100 1000 ) # All
 
 shopt -s nullglob
 files=("${BASE_PATH}"/*)
@@ -33,7 +34,7 @@ fi
 
 for SF in ${SFs[@]}; do
   export SF=$SF
-  . ./scripts/vars.sh
+  . ./scripts/LSQB_env.sh
 
   ./scripts/1_download_LSQB_dataset.sh 2>&1 | tee "${LOG_PATH}/1_sf${SF}.log"
   ./scripts/2_preprocess_LSQB_dataset.sh 2>&1 | tee "${LOG_PATH}/2_sf${SF}.log"
