@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.15)
 project(cuMatch)
 
 # C++
-set(CMAKE_CXX_COMPILER /usr/bin/c++)
 set(CMAKE_CXX_FLAGS "-Wall -O3 -lstdc++ -std=c++17 -fopenmp -D_FILE_OFFSET_BITS=64 -DNDEBUG") # release mode
 # set(CMAKE_CXX_FLAGS "-Wall -O3 -lstdc++ -std=c++17 -fopenmp -D_FILE_OFFSET_BITS=64 -DDEBUG") # debugging mode
 
@@ -57,5 +56,5 @@ target_link_libraries(${_CUMATCH} ${_GSTREAM} ${_ASH} pthread boost_fiber boost_
 foreach(_ITEM csv_relabeler)
 	file(GLOB_RECURSE _SOURCE ${CMAKE_SOURCE_DIR}/source/tools/${_ITEM}/*)
 	add_executable(${_ITEM} ${_SOURCE})
-	target_link_libraries(${_ITEM} ${_ASH} ${_GSTREAM} pthread boost_fiber boost_context boost_filesystem boost_system boost_exception)
+	target_link_libraries(${_ITEM} ${_GSTREAM} ${_ASH} pthread boost_fiber boost_context boost_filesystem boost_system boost_exception)
 endforeach()
