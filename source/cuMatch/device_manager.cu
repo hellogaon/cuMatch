@@ -25,6 +25,7 @@ void device_manager::init(config_t const& cfg) {
     _num_constraints = _cfg.qgraph->num_constraints();
     _num_max_negative_vertices = _cfg.qgraph->num_max_negative_vertices();
     cudaGetDeviceCount(&_num_gpus);
+    assert(_num_gpus <= MaxNumGPUs);
 
     _vertices_info = _cfg.qgraph->qgraph_vertices_info();
     _edges_info = _cfg.qgraph->qgraph_edges_info();
