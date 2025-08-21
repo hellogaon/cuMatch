@@ -1,0 +1,17 @@
+{
+  "query_vertices": [
+    "forum:Forum",
+    "post:Post",
+    "comment:Comment",
+    "tag:Tag",
+    "person:Person"
+  ],
+  "query_edges": [
+    "(post)<-[REPLY_OF]-(comment)",
+    "(forum)-[CONTAINER_OF]->(post)",
+    "(comment)-[HAS_TAG]->(tag)",
+    "(person)<-[HAS_MEMBER]-(forum)"
+  ],
+  "constraints": [
+  ]
+}

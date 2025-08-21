@@ -1,0 +1,24 @@
+{
+  "query_vertices": [
+    "person1:Person",
+    "city1:City",
+    "country:Country",
+    "city2:City",
+    "person2:Person",
+    "person3:Person",
+    "city3:City"
+  ],
+  "query_edges": [
+    "(person1)-[KNOWS]->(person2)",
+    "(person2)-[IS_LOCATED_IN]->(city2)",
+    "(person1)-[IS_LOCATED_IN]->(city1)",
+    "(city1)-[IS_PART_OF]->(country)",
+    "(city2)-[IS_PART_OF]->(country)",
+    "(person2)-[KNOWS]->(person3)",
+    "(person3)-[IS_LOCATED_IN]->(city3)",
+    "(city3)-[IS_PART_OF]->(country)",
+    "(person3)-[KNOWS]->(person1)"
+  ],
+  "constraints": [
+  ]
+}

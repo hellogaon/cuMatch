@@ -1,0 +1,16 @@
+{
+  "query_vertices": [
+    "person2:Person",
+    "person3:Person",
+    "tag:Tag",
+    "person1:Person"
+  ],
+  "query_edges": [
+    "(person1)-[KNOWS]->(person2)",
+    "(person2)-[KNOWS]->(person3)",
+    "(person3)-[HAS_INTEREST]->(tag)"
+  ],
+  "constraints": [
+    "person1<>person3"
+  ]
+}

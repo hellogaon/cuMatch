@@ -1,0 +1,59 @@
+{
+  "vertices": {
+    "Continent": "Continent.csv",
+    "Country": "Country.csv",
+    "City": "City.csv",
+    "University": "University.csv",
+    "Company": "Company.csv",
+    "TagClass": "TagClass.csv",
+    "Tag": "Tag.csv",
+    "Forum": "Forum.csv",
+    "Person": "Person.csv",
+    "Message": {
+      "Comment": "Comment.csv",
+      "Post": "Post.csv"
+    }
+  },
+  "edges": {
+    "HAS_MEMBER": "Forum_hasMember_Person.csv",
+    "HAS_INTEREST": "Person_hasInterest_Tag.csv",
+    "KNOWS": "Person_knows_Person.csv",
+    "STUDY_AT": "Person_studyAt_University.csv",
+    "WORK_AT": "Person_workAt_Company.csv",
+    "IS_PART_OF": [
+      "City_isPartOf_Country.csv", 
+      "Country_isPartOf_Continent.csv"
+    ],
+    "HAS_TAG": [
+      "Comment_hasTag_Tag.csv",
+      "Forum_hasTag_Tag.csv",
+      "Post_hasTag_Tag.csv"
+    ],
+    "IS_LOCATED_IN": [
+      "Company_isLocatedIn_Country.csv",
+      "University_isLocatedIn_City.csv",
+      "Comment_isLocatedIn_Country.csv",
+      "Person_isLocatedIn_City.csv",
+      "Post_isLocatedIn_Country.csv"
+    ],
+    "LIKES": [
+      "Person_likes_Comment.csv",
+      "Person_likes_Post.csv"
+    ],
+    "IS_SUBCLASS_OF": "TagClass_isSubclassOf_TagClass.csv",
+    "HAS_TYPE": "Tag_hasType_TagClass.csv",
+    "CONTAINER_OF": "Forum_containerOf_Post.csv",
+    "HAS_MODERATOR": "Forum_hasModerator_Person.csv",
+    "REPLY_OF": [
+      "Comment_replyOf_Comment.csv",
+      "Comment_replyOf_Post.csv"
+    ],
+    "HAS_CREATOR": [
+      "Comment_hasCreator_Person.csv",
+      "Post_hasCreator_Person.csv"
+    ]
+  },
+  "undirected_edge_labels": [
+    "KNOWS"
+  ] 
+}

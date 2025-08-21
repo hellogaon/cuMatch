@@ -1,0 +1,16 @@
+{
+  "query_vertices": [
+    "post:Post",
+    "person2:Person",
+    "comment:Comment",
+    "person1:Person"
+  ],
+  "query_edges": [
+    "(comment)-[REPLY_OF]->(post)",
+    "(person1)<-[HAS_CREATOR]-(comment)",
+    "(post)-[HAS_CREATOR]->(person2)",
+    "(person1)-[KNOWS]->(person2)"
+  ],
+  "constraints": [
+  ]
+}

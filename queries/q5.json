@@ -1,0 +1,16 @@
+{
+  "query_vertices": [
+    "message:Message",
+    "comment:Comment",
+    "tag:Tag",
+    "tag2:Tag"
+  ],
+  "query_edges": [
+    "(tag)<-[HAS_TAG]-(message)",
+    "(message)<-[REPLY_OF]-(comment)",
+    "(comment)-[HAS_TAG]->(tag2)"
+  ],
+  "constraints": [
+    "tag<>tag2"
+  ]
+}

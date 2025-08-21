@@ -1,0 +1,17 @@
+{
+  "query_vertices": [
+    "creator:Person",
+    "message:Message",
+    "comment:Comment",
+    "tag:Tag",
+    "liker:Person"
+  ],
+  "query_edges": [
+    "(message)<-[REPLY_OF]-(comment)",
+    "(message)-[HAS_CREATOR]->(creator)",
+    "(tag)<-[HAS_TAG]-(message)",
+    "(message)<-[LIKES]-(liker)"
+  ],
+  "constraints": [
+  ]
+}
