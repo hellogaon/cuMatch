@@ -16,8 +16,8 @@ program_config make_config(char* argv[]) {
     cfg.grid_name = argv[1];
     cfg.grid_dir = argv[2];
     cfg.query_file_path = argv[3];
-    cfg.host_buffer_size = strtoull(argv[4], nullptr, 10);
-    cfg.device_buffer_size = strtoull(argv[5], nullptr, 10);
+    cfg.host_buffer_size = ash::GiB(strtoull(argv[4], nullptr, 10));
+    cfg.device_buffer_size = ash::GiB(strtoull(argv[5], nullptr, 10));
     if (std::tolower(argv[6][0]) == 'y')
         cfg.is_table_join = true;
     else if (std::tolower(argv[6][0]) == 'n')
