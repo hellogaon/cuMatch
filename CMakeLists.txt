@@ -20,6 +20,7 @@ list(APPEND CUDA_NVCC_FLAGS
 	#-gencode arch=compute_75,code=sm_75
 	-gencode arch=compute_80,code=sm_80
 	-O3 -std=c++17 -Xcompiler -fopenmp)
+list(APPEND CUDA_NVCC_FLAGS -DNDEBUG) # release mode
 
 # Boost
 set(BOOST_ROOT "~/local/boost_1_82_0")
