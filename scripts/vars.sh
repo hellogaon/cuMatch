@@ -1,6 +1,6 @@
 # Common Parameters
 # Please change the BASE_PATH to your actual project directory
-export BASE_PATH="/mnt/disk1/swpark/test"
+export BASE_PATH="./scratch"
 export LGF_PATH="${BASE_PATH}/LGF"
 export SHARD_SIZE=3072
 
