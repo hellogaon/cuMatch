@@ -12,7 +12,7 @@ QUERY_IDS=("1-short" "2" "3" "4" "5" "6" "7" "8" "9")
 REPEAT_TIMES=1
 TIMEOUT=3650
 
-echo "QUERY_ID | SF | total_counter | kernel_elapsed_time | query_elapsed_time"
+echo "QUERY_ID | SF | total_counter | query_elapsed_time"
 
 for QUERY_ID in ${QUERY_IDS[@]}; do
   for ((i=1; i<=REPEAT_TIMES; i++)); do
@@ -38,11 +38,10 @@ for QUERY_ID in ${QUERY_IDS[@]}; do
       continue
     fi
 
-    query_elapsed_time=$(echo "$output" | grep "Query elapsed time:" | sed -E 's/.*Query elapsed time: ([0-9]+\.[0-9]+) seconds.*/\1/')
-    kernel_elapsed_time=$(echo "$output" | grep "Kernel elapsed time:" | sed -E 's/.*Kernel elapsed time: ([0-9]+\.[0-9]+) seconds.*/\1/')
     total_counter=$(echo "$output" | grep "Total counter:" | sed -E 's/.*Total counter: ([0-9]+).*/\1/')
+    query_elapsed_time=$(echo "$output" | grep "Query elapsed time:" | sed -E 's/.*Query elapsed time: ([0-9]+\.[0-9]+) seconds.*/\1/')
     
-    echo "${QUERY_ID} | 0.1 | ${total_counter} | ${kernel_elapsed_time} | ${query_elapsed_time}"
+    echo "${QUERY_ID} | 0.1 | ${total_counter} | ${query_elapsed_time}"
   done
 done
 
