@@ -8,7 +8,7 @@ cd ..
 
 . ./scripts/vars.sh
 
-#  Supports up to MaxNumGPUs GPUs (see include/cu_match/device_defines.cuh)
+# Supports up to MaxNumGPUs GPUs (see include/cu_match/device_defines.cuh)
 # Single GPU
 docker run -it --name cumatch \
                 --runtime=nvidia \
