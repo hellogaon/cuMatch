@@ -24,8 +24,8 @@ for QUERY_ID in ${QUERY_IDS[@]}; do
     # sudo sh -c "echo 3 > /proc/sys/vm/drop_caches"
 
     query="./queries/q${QUERY_ID}.json"
-    host_buffer_size=21474836480
-    device_buffer_size=21474836480
+    host_buffer_size=20
+    device_buffer_size=20
     table_join_flag="n"
     in_memory_mode="n"
     gpu_streaming_mode_flag="y"

@@ -36,9 +36,9 @@ for SF in ${SFs[@]}; do
   export SF=$SF
   . ./scripts/LSQB_env.sh
 
-  ./scripts/1_download_LSQB_dataset.sh 2>&1 | tee "${LOG_PATH}/1_sf${SF}.log"
-  ./scripts/2_preprocess_LSQB_dataset.sh 2>&1 | tee "${LOG_PATH}/2_sf${SF}.log"
-  ./scripts/3_generate_LSQB_LGF.sh 2>&1 | tee "${LOG_PATH}/3_sf${SF}.log"
-  ./scripts/4_run_LSQB_benchmark.sh 2>&1 | tee "${LOG_PATH}/4_sf${SF}.log"
+  ./scripts/1_1_download_LSQB_dataset.sh 2>&1 | tee "${LOG_PATH}/1_1_sf${SF}.log"
+  ./scripts/1_2_preprocess_LSQB_dataset.sh 2>&1 | tee "${LOG_PATH}/1_2_sf${SF}.log"
+  ./scripts/2_generate_LSQB_LGF.sh 2>&1 | tee "${LOG_PATH}/2_sf${SF}.log"
+  ./scripts/3_run_LSQB_benchmark.sh 2>&1 | tee "${LOG_PATH}/3_sf${SF}.log"
 
 done

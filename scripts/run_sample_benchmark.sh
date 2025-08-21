@@ -23,8 +23,8 @@ for QUERY_ID in ${QUERY_IDS[@]}; do
     grid_name="LSQB_sf0.1"
     grid_dir="./dataset/sample"
     query="./queries/q${QUERY_ID}.json"
-    host_buffer_size=100000000
-    device_buffer_size=100000000
+    host_buffer_size=1
+    device_buffer_size=1
     table_join_flag="n"
     in_memory_mode="n"
     gpu_streaming_mode_flag="y"
