@@ -19,7 +19,7 @@ constexpr unsigned NumWarps = NumThreads * MaxBlocks / WarpSize;
 constexpr unsigned ShardMemSize = 0;
 constexpr unsigned CudaAlignment = 256;
 constexpr unsigned DiskIOSectorSize = 4096;
-constexpr unsigned MaxNumGPUs = 4;
+constexpr unsigned MaxNumGPUs = 1;
 
 using query_pattern_type = unsigned;
 constexpr query_pattern_type NORMAL_PATTERN = 0x00;
