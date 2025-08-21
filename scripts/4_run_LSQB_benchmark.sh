@@ -16,14 +16,14 @@ echo "QUERY_ID | SF | total_counter | kernel_elapsed_time | query_elapsed_time"
 
 for QUERY_ID in ${QUERY_IDS[@]}; do
   for ((i=1; i<=REPEAT_TIMES; i++)); do
-    sync
-    sudo sh -c "echo 1 > /proc/sys/vm/drop_caches"
-    sudo sh -c "echo 2 > /proc/sys/vm/drop_caches"
-    sudo sh -c "echo 3 > /proc/sys/vm/drop_caches"
+    # Optional: clear caches for benchmark (requires root)
+    # sync
+    # sudo sh -c "echo 1 > /proc/sys/vm/drop_caches"
+    # sudo sh -c "echo 2 > /proc/sys/vm/drop_caches"
+    # sudo sh -c "echo 3 > /proc/sys/vm/drop_caches"
 
     query="./queries/q${QUERY_ID}.json"
     host_buffer_size=21474836480
-    #host_buffer_size=140402513168 # for in-memory
     device_buffer_size=21474836480
     table_join_flag="n"
     in_memory_mode="n"
