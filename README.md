@@ -38,6 +38,7 @@ Running the experiments in the paper typically requires a system with ~40 GB o
 
 Getting Started Guide
 --------
+
 ### Run locally
 
 **1. Clone the source code**
@@ -72,6 +73,7 @@ $ cmake ../
 $ make -j `nproc`
 $ cd ..
 ```
+
 
 ### Run with Docker
 **1. Clone the source code**
@@ -179,7 +181,7 @@ $ ./build/cuMatch <GRAPH_NAME> <GRAPH_PATH> <QUERY_PATH> \
 - **GPU_STREAMING_FLAG($8):** Whether to use GPU streaming mode. `(y/n)`
 
 
-
 Contact
 --------
-If you have any questions, we encourage you to either create Github issues or get in touch directly with Sungwoo Park at sungwoo.park@kaist.ac.kr.
+
+If you have any questions, please create a GitHub issue or contact Sungwoo Park directly at sungwoo.park@kaist.ac.kr.
