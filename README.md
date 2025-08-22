@@ -1,6 +1,6 @@
-# cuMatch: A GPU-based Memory-Efficient Worst-case Optimal Join Processing Method for Subgraph Queries with Complex Patterns
+# cuMatch: A GPU-based Memory-Efficient Worst-case Optimal Join Processing Method for Subgraph Queries with Complex Patterns [SIGMOD'25]
 
-This repository provides the implementation of cuMatch, a system that processes subgraph queries on GPUs using the worst-case optimal join (WCOJ) approach. 
+This repository provides the implementation of **cuMatch**, a system that processes subgraph queries on GPUs using the worst-case optimal join (WCOJ) approach. 
 It includes scripts and tools to run the full Large-scale Complex Subgraph Query Benchmark (LSQB), which serves as the primary benchmark in our experimental evaluation.
 Beyond LSQB, cuMatch also provides a flexible framework that converts arbitrary graph data from CSV into the Labeled Grid Format (LGF) and executes user-defined subgraph queries, including those with complex patterns, in a memory-efficient GPU environment.
 
@@ -115,21 +115,20 @@ $ ./build/cuMatch LGF_sample ./sample/LGF ./queries/sample-q3.json 1 1 n n y # o
 ```
 
 
-Evaluate LSQB benchmark
+Evaluate LSQB Benchmark
 --------
 
-All datasets and outputs, including logs for each step, are stored under the `BASE_PATH` defined in `./scripts/vars.sh`. For SF=1000, up to 1.5TB of free disk space may be required. Expected logs and final results for all scale factors can be found [here]().
+All datasets and outputs, including logs for each step, are stored under the `BASE_PATH` defined in `./scripts/vars.sh`. For SF=1000, up to 1.5TB of free disk space may be required. Expected logs and final results for all scale factors can be found [here](https://github.com/hellogaon/cuMatch/tree/main/results).
 
 ### Step 1. Download & Preprocess Dataset
 
 Download the pre-generated original dataset from the official [LSQB repository](https://github.com/ldbc/lsqb), then relabel vertices sequentially from 0 within each label as part of preprocessing.
 ```
 # Example: To run with with Scale Factor 0.1 (supported SF: 0.1, 1, 10, 100, 1000)
-$ export SF=0.1
 
+$ export SF=0.1
 $ ./scripts/1_1_download_LSQB_dataset.sh
 $ ./scripts/1_2_preprocess_LSQB_dataset.sh
-$ ./scripts/generate_LSQB_LGF.sh
 ```
 
 ### Step 2. Generate LGF
@@ -163,9 +162,9 @@ $ ./build/cuMatch <GRAPH_NAME> <GRAPH_PATH> <QUERY_PATH> \
 
 ### Input data graph & query graph parameter
 
-- **GRAPH_NAME($1):** Graph name. `e.g., LSQB_0.1`
-- **GRAPH_PATH($2):** Dataset path. `e.g., ./sample`
-- **QUERY_PATH($3):** Query path. `e.g., ./queries/q2.json`
+- **GRAPH_NAME($1):** Graph name. `e.g., LGF_Sample`
+- **GRAPH_PATH($2):** Dataset path. `e.g., ./sample/LGF`
+- **QUERY_PATH($3):** Query path. `e.g., ./queries/sample-q1.json`
 
 ### Memory parameter
 
