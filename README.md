@@ -2,7 +2,7 @@
 
 This repository provides the implementation of **cuMatch**, a system that processes subgraph queries on GPUs using the worst-case optimal join (WCOJ) approach. 
 It includes scripts and tools to run the full Large-scale Complex Subgraph Query Benchmark (LSQB), which serves as the primary benchmark in our experimental evaluation.
-Beyond LSQB, cuMatch also provides a flexible framework that converts arbitrary graph data from CSV into the **Labeled Grid Format (LGF)** and executes user-defined subgraph queries, including those with complex patterns, in a memory-efficient GPU environment.
+Beyond LSQB, cuMatch also provides a flexible framework that converts arbitrary graph data from CSV into the Labeled Grid Format (LGF) and executes user-defined subgraph queries, including those with complex patterns, in a memory-efficient GPU environment.
 
 Prerequisite
 --------
