@@ -34,7 +34,7 @@ The hardware specifications used in the paper are shown below.
 - **Memory:** 1 TB
 - **SSD:** PCI-E SSD 6.4 TB * 4
 
-To run all experiments shown in the paper, an environment with 40 GB or more of main memory and 20 GB or more of GPU memory is required.
+Running the experiments in the paper typically requires a system with ~40 GB of main memory and ~20 GB of GPU memory.
 
 Getting Started Guide
 --------
