@@ -11,7 +11,7 @@ void print_kernel_buffer(kernel_buffer_header const* kbuf) {
         printf("\tnum_constraints: %u\n", kbuf->num_constraints);
         printf("\tnum_subtasks: %u\n", kbuf->num_subtasks);
         printf("\tnum_sched_tree_nodes: %u\n", kbuf->num_sched_tree_nodes);
-        printf("\tnum_shards: %u\n", kbuf->num_shards);
+        printf("\tnum_slices: %u\n", kbuf->num_shards);
         printf("\tglobal_order: [ ");
         for (uint32_t j = 0; j < kbuf->num_query_vertices; j++) {
             printf("%u ", kbuf->global_order[j]);

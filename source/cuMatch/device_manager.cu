@@ -216,7 +216,7 @@ bool device_manager::execute_match(lgf_scheduler* lgf_sched) {
             H2D_time[g_id] += watch2[g_id].elapsed_sec();
 
             // Kernel
-            printf("> GPU: %u, kernel: %u, kernel_buffer_size: %lu, num_shards: %lu\n", g_id, iteration, kernel_header_size + kernel_data_size, k_info->total_sleaf_ptrs.size());
+            printf("> GPU: %u, kernel: %u, kernel_buffer_size: %lu, num_slices: %lu\n", g_id, iteration, kernel_header_size + kernel_data_size, k_info->total_sleaf_ptrs.size());
             printf("-------------------------------------------------------------------\n");
             watch1[g_id].reset();
 
@@ -321,7 +321,7 @@ bool device_manager::execute_match_with_double_buffering(lgf_scheduler* lgf_sche
         
         while (true) {
             // stream 0 kernel
-            printf("> GPU: %u, kernel: %u, kernel_buffer_size: %lu, num_shards: %lu\n", g_id, iteration, kernel_header_size + kernel_data_size, k_info1->total_sleaf_ptrs.size());
+            printf("> GPU: %u, kernel: %u, kernel_buffer_size: %lu, num_slices: %lu\n", g_id, iteration, kernel_header_size + kernel_data_size, k_info1->total_sleaf_ptrs.size());
             printf("-------------------------------------------------------------------\n");
             watch[g_id].reset();
             
@@ -369,7 +369,7 @@ bool device_manager::execute_match_with_double_buffering(lgf_scheduler* lgf_sche
             iteration++;
 
             // stream 1 kernel
-            printf("> GPU: %u, kernel: %u, kernel_buffer_size: %lu, num_shards: %lu\n", g_id, iteration, kernel_header_size + kernel_data_size, k_info2->total_sleaf_ptrs.size());
+            printf("> GPU: %u, kernel: %u, kernel_buffer_size: %lu, num_slices: %lu\n", g_id, iteration, kernel_header_size + kernel_data_size, k_info2->total_sleaf_ptrs.size());
             printf("-------------------------------------------------------------------\n");
             watch[g_id].reset();
             
