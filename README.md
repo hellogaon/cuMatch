@@ -34,6 +34,7 @@ The hardware specifications used in the paper are shown below.
 - **Memory:** 1 TB
 - **SSD:** PCI-E SSD 6.4 TB * 4
 
+To run all experiments shown in the paper, an environment with 40 GB or more of main memory and 20 GB or more of GPU memory is required.
 
 Getting Started Guide
 --------
@@ -122,7 +123,7 @@ All datasets and logs are stored under `BASE_PATH` defined in `./scripts/vars.sh
 
 ### Step 1. Download & Preprocess Dataset
 
-Download the pre-generated original dataset from the official [LSQB repository](https://github.com/ldbc/lsqb), then relabel vertices sequentially from 0 within each label as part of preprocessing.
+Download the pre-generated dataset from the official [LSQB repository](https://github.com/ldbc/lsqb). As part of preprocessing, each label's vertices are reassigned IDs sequentially starting from 0. Note that for SF=1000, this step may require up to 200 GB of memory.
 ```
 # Example: To run with with Scale Factor 0.1 (supported SF: 0.1, 1, 10, 100, 1000)
 
