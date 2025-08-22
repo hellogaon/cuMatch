@@ -1,37 +1,195 @@
-	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/City.csv
-	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Company.csv
-	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Continent.csv
-	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Country.csv
-	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Forum.csv
-	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Comment.csv
-	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Post.csv
-	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Person.csv
-	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Tag.csv
-	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/TagClass.csv
-	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/University.csv
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Forum_containerOf_Post.csv, src_vl_id: 4, dest_vl_id: 6
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Comment_hasCreator_Person.csv, src_vl_id: 5, dest_vl_id: 7
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Post_hasCreator_Person.csv, src_vl_id: 6, dest_vl_id: 7
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Person_hasInterest_Tag.csv, src_vl_id: 7, dest_vl_id: 8
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Forum_hasMember_Person.csv, src_vl_id: 4, dest_vl_id: 7
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Forum_hasModerator_Person.csv, src_vl_id: 4, dest_vl_id: 7
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Comment_hasTag_Tag.csv, src_vl_id: 5, dest_vl_id: 8
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Forum_hasTag_Tag.csv, src_vl_id: 4, dest_vl_id: 8
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Post_hasTag_Tag.csv, src_vl_id: 6, dest_vl_id: 8
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Tag_hasType_TagClass.csv, src_vl_id: 8, dest_vl_id: 9
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Company_isLocatedIn_Country.csv, src_vl_id: 1, dest_vl_id: 3
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/University_isLocatedIn_City.csv, src_vl_id: 10, dest_vl_id: 0
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Comment_isLocatedIn_Country.csv, src_vl_id: 5, dest_vl_id: 3
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Person_isLocatedIn_City.csv, src_vl_id: 7, dest_vl_id: 0
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Post_isLocatedIn_Country.csv, src_vl_id: 6, dest_vl_id: 3
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/City_isPartOf_Country.csv, src_vl_id: 0, dest_vl_id: 3
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Country_isPartOf_Continent.csv, src_vl_id: 3, dest_vl_id: 2
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/TagClass_isSubclassOf_TagClass.csv, src_vl_id: 9, dest_vl_id: 9
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Person_knows_Person.csv, src_vl_id: 7, dest_vl_id: 7
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Person_likes_Comment.csv, src_vl_id: 7, dest_vl_id: 5
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Person_likes_Post.csv, src_vl_id: 7, dest_vl_id: 6
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Comment_replyOf_Comment.csv, src_vl_id: 5, dest_vl_id: 5
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Comment_replyOf_Post.csv, src_vl_id: 5, dest_vl_id: 6
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Person_studyAt_University.csv, src_vl_id: 7, dest_vl_id: 10
-	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk/Person_workAt_Company.csv, src_vl_id: 7, dest_vl_id: 1
-Elapsed time: 205.424 seconds
+-------------------------+-------------------------
+Argument                 |Value                    
+-------------------------+-------------------------
+Grid name:               | LSQB_sf10                
+Input directory:         | /root/cuMatch/scratch/LSQB/social-network-sf10-projected-fk-relabeled
+Output directory:        | /root/cuMatch/scratch/LGF
+Schema file path:        | ./schema/LSQB_schema.json
+Header flag:             | true                     
+Skip relabeling:         | true                     
+-------------------------+-------------------------
+> Vertex Labels : {0: City}, {1: Company}, {2: Continent}, {3: Country}, {4: Forum}, {5: Comment}, {6: Post}, {7: Message}, {8: Person}, {9: Tag}, {10: TagClass}, {11: University}
+> Edge Labels : {0: CONTAINER_OF}, {1: HAS_CREATOR}, {2: HAS_INTEREST}, {3: HAS_MEMBER}, {4: HAS_MODERATOR}, {5: HAS_TAG}, {6: HAS_TYPE}, {7: IS_LOCATED_IN}, {8: IS_PART_OF}, {9: IS_SUBCLASS_OF}, {10: KNOWS}, {11: LIKES}, {12: REPLY_OF}, {13: STUDY_AT}, {14: WORK_AT}
+> Total vertices : 35496603
+> Total edges : 219425671
+> Maximum num grids : 144
+> Maximum num grids per edge label : 4
+> Vertex label range : { City: [0-1) Company: [1-2) Continent: [2-3) Country: [3-4) Forum: [4-5) Comment: [5-7) Post: [7-8) Message: [5-8) Person: [8-9) Tag: [9-10) TagClass: [10-11) University: [11-12) 
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/8/8-0-7.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/11/11-0-7.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/8/8-1-14.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/3/3-2-8.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/0/0-3-8.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/1/1-3-7.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/5/5-3-7.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/6/6-3-7.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/7/7-3-7.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/5/5-5-12.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/6/6-5-12.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/8/8-5-11.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/6/6-6-12.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/8/8-6-11.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/4/4-7-0.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/5/5-7-12.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/6/6-7-12.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/8/8-7-11.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/4/4-8-3.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/4/4-8-4.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/5/5-8-1.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/6/6-8-1.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/7/7-8-1.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/8/8-8-10.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/4/4-9-5.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/5/5-9-5.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/6/6-9-5.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/7/7-9-5.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/8/8-9-2.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/9/9-10-6.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/10/10-10-9.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/8/8-11-13.el32.labeled
+Input: /root/cuMatch/scratch/LGF/el32_tmp/8/8-0-7.el32.labeled [GBID: 8, 0, 7] [EDGE LABEL: IS_LOCATED_IN]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/8/8-0-7.el32.labeled, 73000 edges (584000 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/11/11-0-7.el32.labeled [GBID: 11, 0, 7] [EDGE LABEL: IS_LOCATED_IN]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/11/11-0-7.el32.labeled, 6380 edges (51040 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/8/8-1-14.el32.labeled [GBID: 8, 1, 14] [EDGE LABEL: WORK_AT]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/8/8-1-14.el32.labeled, 158977 edges (1271816 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/3/3-2-8.el32.labeled [GBID: 3, 2, 8] [EDGE LABEL: IS_PART_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/3/3-2-8.el32.labeled, 111 edges (888 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/0/0-3-8.el32.labeled [GBID: 0, 3, 8] [EDGE LABEL: IS_PART_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/0/0-3-8.el32.labeled, 1343 edges (10744 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/1/1-3-7.el32.labeled [GBID: 1, 3, 7] [EDGE LABEL: IS_LOCATED_IN]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/1/1-3-7.el32.labeled, 1575 edges (12600 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/5/5-3-7.el32.labeled [GBID: 5, 3, 7] [EDGE LABEL: IS_LOCATED_IN]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/5/5-3-7.el32.labeled, 16777216 edges (134217728 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/6/6-3-7.el32.labeled [GBID: 6, 3, 7] [EDGE LABEL: IS_LOCATED_IN]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/6/6-3-7.el32.labeled, 8874792 edges (70998336 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/7/7-3-7.el32.labeled [GBID: 7, 3, 7] [EDGE LABEL: IS_LOCATED_IN]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/7/7-3-7.el32.labeled, 9020368 edges (72162944 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/5/5-5-12.el32.labeled [GBID: 5, 5, 12] [EDGE LABEL: REPLY_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/5/5-5-12.el32.labeled, 8487272 edges (67898176 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/6/6-5-12.el32.labeled [GBID: 6, 5, 12] [EDGE LABEL: REPLY_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/6/6-5-12.el32.labeled, 6 edges (48 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/8/8-5-11.el32.labeled [GBID: 8, 5, 11] [EDGE LABEL: LIKES]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/8/8-5-11.el32.labeled, 13819521 edges (110556168 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/6/6-6-12.el32.labeled [GBID: 6, 6, 12] [EDGE LABEL: REPLY_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/6/6-6-12.el32.labeled, 4496358 edges (35970864 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/8/8-6-11.el32.labeled [GBID: 8, 6, 11] [EDGE LABEL: LIKES]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/8/8-6-11.el32.labeled, 7235988 edges (57887904 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/4/4-7-0.el32.labeled [GBID: 4, 7, 0] [EDGE LABEL: CONTAINER_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/4/4-7-0.el32.labeled, 9020368 edges (72162944 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/5/5-7-12.el32.labeled [GBID: 5, 7, 12] [EDGE LABEL: REPLY_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/5/5-7-12.el32.labeled, 8289944 edges (66319552 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/6/6-7-12.el32.labeled [GBID: 6, 7, 12] [EDGE LABEL: REPLY_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/6/6-7-12.el32.labeled, 4378428 edges (35027424 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/8/8-7-11.el32.labeled [GBID: 8, 7, 11] [EDGE LABEL: LIKES]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/8/8-7-11.el32.labeled, 9543648 edges (76349184 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/4/4-8-3.el32.labeled [GBID: 4, 8, 3] [EDGE LABEL: HAS_MEMBER]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/4/4-8-3.el32.labeled, 34787469 edges (278299752 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/4/4-8-4.el32.labeled [GBID: 4, 8, 4] [EDGE LABEL: HAS_MODERATOR]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/4/4-8-4.el32.labeled, 725661 edges (5805288 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/5/5-8-1.el32.labeled [GBID: 5, 8, 1] [EDGE LABEL: HAS_CREATOR]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/5/5-8-1.el32.labeled, 16777216 edges (134217728 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/6/6-8-1.el32.labeled [GBID: 6, 8, 1] [EDGE LABEL: HAS_CREATOR]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/6/6-8-1.el32.labeled, 8874792 edges (70998336 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/7/7-8-1.el32.labeled [GBID: 7, 8, 1] [EDGE LABEL: HAS_CREATOR]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/7/7-8-1.el32.labeled, 9020368 edges (72162944 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/8/8-8-10.el32.labeled [GBID: 8, 8, 10] [EDGE LABEL: KNOWS]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/8/8-8-10.el32.labeled, 4761700 edges (38093600 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/4/4-9-5.el32.labeled [GBID: 4, 9, 5] [EDGE LABEL: HAS_TAG]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/4/4-9-5.el32.labeled, 2362408 edges (18899264 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/5/5-9-5.el32.labeled [GBID: 5, 9, 5] [EDGE LABEL: HAS_TAG]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/5/5-9-5.el32.labeled, 20816344 edges (166530752 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/6/6-9-5.el32.labeled [GBID: 6, 9, 5] [EDGE LABEL: HAS_TAG]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/6/6-9-5.el32.labeled, 11017874 edges (88142992 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/7/7-9-5.el32.labeled [GBID: 7, 9, 5] [EDGE LABEL: HAS_TAG]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/7/7-9-5.el32.labeled, 8312121 edges (66496968 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/8/8-9-2.el32.labeled [GBID: 8, 9, 2] [EDGE LABEL: HAS_INTEREST]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/8/8-9-2.el32.labeled, 1709747 edges (13677976 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/9/9-10-6.el32.labeled [GBID: 9, 10, 6] [EDGE LABEL: HAS_TYPE]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/9/9-10-6.el32.labeled, 16080 edges (128640 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/10/10-10-9.el32.labeled [GBID: 10, 10, 9] [EDGE LABEL: IS_SUBCLASS_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/10/10-10-9.el32.labeled, 70 edges (560 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/8/8-11-13.el32.labeled [GBID: 8, 11, 13] [EDGE LABEL: STUDY_AT]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/8/8-11-13.el32.labeled, 58526 edges (468208 byte)
++---------------------------------------------------------+
+| Labeled Grid Format Info                                |
++--------------------------+------------------------------+
+| Name                     |                    LSQB_sf10 |
+| Dim                      |                 12 x 12 x 15 |
+| Grid Size                |      2652946432    (2.5 GiB) |
+| Vertex range             |       201326592    (201.3 M) |
+| # of non-isol. vertices  |        35496603     (35.5 M) |
+| # of edges               |       219425671    (219.4 M) |
+| Index-tree size          |           11904   (11.6 KiB) |
+| # of Slices              |                           64 |
+| # of Vertex Labels       |                           12 |
+| # of Edge Labels         |                           15 |
+| Max. Slice size          |      3221225472      (3 GiB) |
++--------------------------+------------------------------+
+Step 1 elapsed time: 63.814302 seconds
+Step 2 elapsed time: 8.253121 seconds
+Elapsed time: 72.2778 seconds

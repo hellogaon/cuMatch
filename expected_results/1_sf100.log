@@ -1,0 +1,37 @@
+	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/City.csv
+	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Company.csv
+	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Continent.csv
+	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Country.csv
+	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Forum.csv
+	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Comment.csv
+	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Post.csv
+	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Person.csv
+	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Tag.csv
+	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/TagClass.csv
+	Processing Vertex File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/University.csv
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Forum_containerOf_Post.csv, src_vl_id: 4, dest_vl_id: 6
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Comment_hasCreator_Person.csv, src_vl_id: 5, dest_vl_id: 7
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Post_hasCreator_Person.csv, src_vl_id: 6, dest_vl_id: 7
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Person_hasInterest_Tag.csv, src_vl_id: 7, dest_vl_id: 8
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Forum_hasMember_Person.csv, src_vl_id: 4, dest_vl_id: 7
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Forum_hasModerator_Person.csv, src_vl_id: 4, dest_vl_id: 7
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Comment_hasTag_Tag.csv, src_vl_id: 5, dest_vl_id: 8
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Forum_hasTag_Tag.csv, src_vl_id: 4, dest_vl_id: 8
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Post_hasTag_Tag.csv, src_vl_id: 6, dest_vl_id: 8
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Tag_hasType_TagClass.csv, src_vl_id: 8, dest_vl_id: 9
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Company_isLocatedIn_Country.csv, src_vl_id: 1, dest_vl_id: 3
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/University_isLocatedIn_City.csv, src_vl_id: 10, dest_vl_id: 0
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Comment_isLocatedIn_Country.csv, src_vl_id: 5, dest_vl_id: 3
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Person_isLocatedIn_City.csv, src_vl_id: 7, dest_vl_id: 0
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Post_isLocatedIn_Country.csv, src_vl_id: 6, dest_vl_id: 3
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/City_isPartOf_Country.csv, src_vl_id: 0, dest_vl_id: 3
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Country_isPartOf_Continent.csv, src_vl_id: 3, dest_vl_id: 2
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/TagClass_isSubclassOf_TagClass.csv, src_vl_id: 9, dest_vl_id: 9
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Person_knows_Person.csv, src_vl_id: 7, dest_vl_id: 7
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Person_likes_Comment.csv, src_vl_id: 7, dest_vl_id: 5
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Person_likes_Post.csv, src_vl_id: 7, dest_vl_id: 6
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Comment_replyOf_Comment.csv, src_vl_id: 5, dest_vl_id: 5
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Comment_replyOf_Post.csv, src_vl_id: 5, dest_vl_id: 6
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Person_studyAt_University.csv, src_vl_id: 7, dest_vl_id: 10
+	Processing Edge File: /root/cuMatch/scratch/LSQB/social-network-sf100-projected-fk/Person_workAt_Company.csv, src_vl_id: 7, dest_vl_id: 1
+Elapsed time: 2068.62 seconds
