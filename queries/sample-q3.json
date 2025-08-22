@@ -1,0 +1,13 @@
+{
+  "query_vertices": [
+    "u8:A",
+    "u9:C",
+    "u10:D"
+  ],
+  "query_edges": [
+    "(u8)<-[a]-(u9)",
+    "OPTIONAL (u9)-[b]->(u10)"
+  ],
+  "constraints": [
+  ]
+}

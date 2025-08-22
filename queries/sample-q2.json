@@ -1,0 +1,14 @@
+{
+  "query_vertices": [
+    "u5:A",
+    "u6:B",
+    "u7:C"
+  ],
+  "query_edges": [
+    "(u5)-[a]->(u6)",
+    "(u5)<-[a]-(u7)",
+    "NOT (u6)-[b]->(u7)"
+  ],
+  "constraints": [
+  ]
+}
