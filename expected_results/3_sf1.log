@@ -1,0 +1,160 @@
+-------------------------+-------------------------
+Argument                 |Value                    
+-------------------------+-------------------------
+Grid name:               | LSQB_sf1                 
+Input directory:         | /root/cuMatch/scratch/LSQB/social-network-sf1-projected-fk-relabeled
+Output directory:        | /root/cuMatch/scratch/LGF
+Schema file path:        | ./schema/LSQB_schema.json
+Header flag:             | true                     
+Skip relabeling:         | true                     
+-------------------------+-------------------------
+> Vertex Labels : {0: City}, {1: Company}, {2: Continent}, {3: Country}, {4: Forum}, {5: Comment}, {6: Post}, {7: Message}, {8: Person}, {9: Tag}, {10: TagClass}, {11: University}
+> Edge Labels : {0: CONTAINER_OF}, {1: HAS_CREATOR}, {2: HAS_INTEREST}, {3: HAS_MEMBER}, {4: HAS_MODERATOR}, {5: HAS_TAG}, {6: HAS_TYPE}, {7: IS_LOCATED_IN}, {8: IS_PART_OF}, {9: IS_SUBCLASS_OF}, {10: KNOWS}, {11: LIKES}, {12: REPLY_OF}, {13: STUDY_AT}, {14: WORK_AT}
+> Total vertices : 3955790
+> Total edges : 22422969
+> Maximum num grids : 121
+> Maximum num grids per edge label : 1
+> Vertex label range : { City: [0-1) Company: [1-2) Continent: [2-3) Country: [3-4) Forum: [4-5) Comment: [5-6) Post: [6-7) Message: [5-7) Person: [7-8) Tag: [8-9) TagClass: [9-10) University: [10-11) 
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/7/7-0-7.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/10/10-0-7.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/7/7-1-14.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/3/3-2-8.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/0/0-3-8.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/1/1-3-7.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/5/5-3-7.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/6/6-3-7.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/5/5-5-12.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/7/7-5-11.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/4/4-6-0.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/5/5-6-12.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/7/7-6-11.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/4/4-7-3.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/4/4-7-4.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/5/5-7-1.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/6/6-7-1.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/7/7-7-10.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/4/4-8-5.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/5/5-8-5.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/6/6-8-5.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/7/7-8-2.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/8/8-9-6.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/9/9-9-9.el32.labeled
+dmesg > labeled_gridgen_utility.cpp:66
+find /root/cuMatch/scratch/LGF/el32_tmp/7/7-10-13.el32.labeled
+Input: /root/cuMatch/scratch/LGF/el32_tmp/7/7-0-7.el32.labeled [GBID: 7, 0, 7] [EDGE LABEL: IS_LOCATED_IN]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/7/7-0-7.el32.labeled, 11000 edges (88000 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/10/10-0-7.el32.labeled [GBID: 10, 0, 7] [EDGE LABEL: IS_LOCATED_IN]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/10/10-0-7.el32.labeled, 6380 edges (51040 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/7/7-1-14.el32.labeled [GBID: 7, 1, 14] [EDGE LABEL: WORK_AT]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/7/7-1-14.el32.labeled, 23600 edges (188800 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/3/3-2-8.el32.labeled [GBID: 3, 2, 8] [EDGE LABEL: IS_PART_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/3/3-2-8.el32.labeled, 111 edges (888 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/0/0-3-8.el32.labeled [GBID: 0, 3, 8] [EDGE LABEL: IS_PART_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/0/0-3-8.el32.labeled, 1343 edges (10744 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/1/1-3-7.el32.labeled [GBID: 1, 3, 7] [EDGE LABEL: IS_LOCATED_IN]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/1/1-3-7.el32.labeled, 1575 edges (12600 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/5/5-3-7.el32.labeled [GBID: 5, 3, 7] [EDGE LABEL: IS_LOCATED_IN]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/5/5-3-7.el32.labeled, 2580332 edges (20642656 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/6/6-3-7.el32.labeled [GBID: 6, 3, 7] [EDGE LABEL: IS_LOCATED_IN]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/6/6-3-7.el32.labeled, 1229275 edges (9834200 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/5/5-5-12.el32.labeled [GBID: 5, 5, 12] [EDGE LABEL: REPLY_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/5/5-5-12.el32.labeled, 1305740 edges (10445920 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/7/7-5-11.el32.labeled [GBID: 7, 5, 11] [EDGE LABEL: LIKES]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/7/7-5-11.el32.labeled, 1668015 edges (13344120 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/4/4-6-0.el32.labeled [GBID: 4, 6, 0] [EDGE LABEL: CONTAINER_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/4/4-6-0.el32.labeled, 1229275 edges (9834200 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/5/5-6-12.el32.labeled [GBID: 5, 6, 12] [EDGE LABEL: REPLY_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/5/5-6-12.el32.labeled, 1274592 edges (10196736 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/7/7-6-11.el32.labeled [GBID: 7, 6, 11] [EDGE LABEL: LIKES]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/7/7-6-11.el32.labeled, 853145 edges (6825160 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/4/4-7-3.el32.labeled [GBID: 4, 7, 3] [EDGE LABEL: HAS_MEMBER]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/4/4-7-3.el32.labeled, 3268415 edges (26147320 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/4/4-7-4.el32.labeled [GBID: 4, 7, 4] [EDGE LABEL: HAS_MODERATOR]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/4/4-7-4.el32.labeled, 109617 edges (876936 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/5/5-7-1.el32.labeled [GBID: 5, 7, 1] [EDGE LABEL: HAS_CREATOR]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/5/5-7-1.el32.labeled, 2580332 edges (20642656 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/6/6-7-1.el32.labeled [GBID: 6, 7, 1] [EDGE LABEL: HAS_CREATOR]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/6/6-7-1.el32.labeled, 1229275 edges (9834200 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/7/7-7-10.el32.labeled [GBID: 7, 7, 10] [EDGE LABEL: KNOWS]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/7/7-7-10.el32.labeled, 452586 edges (3620688 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/4/4-8-5.el32.labeled [GBID: 4, 8, 5] [EDGE LABEL: HAS_TAG]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/4/4-8-5.el32.labeled, 354213 edges (2833704 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/5/5-8-5.el32.labeled [GBID: 5, 8, 5] [EDGE LABEL: HAS_TAG]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/5/5-8-5.el32.labeled, 3148317 edges (25186536 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/6/6-8-5.el32.labeled [GBID: 6, 8, 5] [EDGE LABEL: HAS_TAG]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/6/6-8-5.el32.labeled, 815205 edges (6521640 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/7/7-8-2.el32.labeled [GBID: 7, 8, 2] [EDGE LABEL: HAS_INTEREST]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/7/7-8-2.el32.labeled, 255596 edges (2044768 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/8/8-9-6.el32.labeled [GBID: 8, 9, 6] [EDGE LABEL: HAS_TYPE]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/8/8-9-6.el32.labeled, 16080 edges (128640 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/9/9-9-9.el32.labeled [GBID: 9, 9, 9] [EDGE LABEL: IS_SUBCLASS_OF]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/9/9-9-9.el32.labeled, 70 edges (560 byte)
+Input: /root/cuMatch/scratch/LGF/el32_tmp/7/7-10-13.el32.labeled [GBID: 7, 10, 13] [EDGE LABEL: STUDY_AT]
+dmesg > labeled_grid_generator.cpp:458
+Converting /root/cuMatch/scratch/LGF/el32_tmp/7/7-10-13.el32.labeled, 8880 edges (71040 byte)
++---------------------------------------------------------+
+| Labeled Grid Format Info                                |
++--------------------------+------------------------------+
+| Name                     |                     LSQB_sf1 |
+| Dim                      |                 11 x 11 x 15 |
+| Grid Size                |       281501696  (268.5 MiB) |
+| Vertex range             |       184549376    (184.5 M) |
+| # of non-isol. vertices  |         3955790      (4.0 M) |
+| # of edges               |        22422969     (22.4 M) |
+| Index-tree size          |            9300    (9.1 KiB) |
+| # of Slices              |                           50 |
+| # of Vertex Labels       |                           12 |
+| # of Edge Labels         |                           15 |
+| Max. Slice size          |      3221225472      (3 GiB) |
++--------------------------+------------------------------+
+Step 1 elapsed time: 6.052670 seconds
+Step 2 elapsed time: 2.070633 seconds
+Elapsed time: 8.17225 seconds
