@@ -1,0 +1,22 @@
+{
+  "vertices": {
+    "A": "A.csv",
+    "B": "B.csv",
+    "C": "C.csv",
+    "D": "D.csv",
+    "E": "E.csv"
+  },
+  "edges": {
+    "a": [
+      "A_a_B.csv",
+      "C_a_A.csv"
+    ],
+    "b": [
+      "B_b_C.csv",
+      "C_b_D.csv",
+      "D_b_E.csv"
+    ]
+  },
+  "undirected_edge_labels": [
+  ] 
+}
