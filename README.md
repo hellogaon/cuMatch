@@ -103,18 +103,18 @@ $ docker build --tag cumatch .
 
 Run Sample Queries
 --------
-The following commands reproduce the data graph and queries shown in Figure 1 of the paper.
-The data graph is first converted from CSV to LGF, after which several types of queries (regular, negative, and optional patterns) are executed using `cuMatch`.
+The following commands reproduce the data graph and three queries shown in Figure 1 of the paper.
+The data graph is first converted from CSV to LGF, and then three types of queries — regular, negative, and optional patterns — are executed using `cuMatch`.
 
 ```
 # Generate the data graph
-# ./build/labeled_gridgen <GRAPH_NAME> <CSV_PATH> <OUTPUT_PATH> <SCHEMA_PATH>
+# Usage: ./build/labeled_gridgen <GRAPH_NAME> <CSV_PATH> <OUTPUT_PATH> <SCHEMA_PATH>
 $ ./build/labeled_gridgen LGF_sample ./sample/CSV ./sample/LGF ./schema/sample_schema.json
 
 # Run sample queries
-$ ./build/cuMatch LGF_sample ./sample/LGF ./queries/sample-q1.json 1 1 n n y # regular pattern
-$ ./build/cuMatch LGF_sample ./sample/LGF ./queries/sample-q2.json 1 1 n n y # negative pattern
-$ ./build/cuMatch LGF_sample ./sample/LGF ./queries/sample-q3.json 1 1 n n y # optional pattern
+$ ./build/cuMatch LGF_sample ./sample/LGF ./queries/sample-q1.json 1 1 n n y # regular
+$ ./build/cuMatch LGF_sample ./sample/LGF ./queries/sample-q2.json 1 1 n n y # negative
+$ ./build/cuMatch LGF_sample ./sample/LGF ./queries/sample-q3.json 1 1 n n y # optional
 ```
 
 
