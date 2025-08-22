@@ -108,7 +108,7 @@ The data graph is first converted from CSV to LGF, and then three types of queri
 
 ```
 # Generate the data graph
-# Usage: ./build/labeled_gridgen <GRAPH_NAME> <CSV_PATH> <OUTPUT_PATH> <SCHEMA_PATH>
+# Usage: ./build/labeled_gridgen <GRAPH_NAME> <CSV_PATH> <LGF_OUTPUT_PATH> <SCHEMA_PATH>
 $ ./build/labeled_gridgen LGF_sample ./sample/CSV ./sample/LGF ./schema/sample_schema.json
 
 # Run sample queries
