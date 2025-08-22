@@ -13,4 +13,4 @@ if [ ! -d "${LGF_PATH}" ]; then
     mkdir -p "${LGF_PATH}"
 fi
 
-./build/labeled_gridgen ${LSQB_LGF_NAME} ${LSQB_RELABELED_DATASET_PATH} ${LGF_PATH} ${LSQB_SCHEMA_FILE} ${SHARD_SIZE} y n y
+./build/labeled_gridgen ${LSQB_LGF_NAME} ${LSQB_RELABELED_DATASET_PATH} ${LGF_PATH} ${LSQB_SCHEMA_FILE} y y

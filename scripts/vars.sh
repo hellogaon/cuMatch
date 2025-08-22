@@ -3,7 +3,6 @@
 export BASE_PATH=/mnt/disk1/swpark/test
 export LGF_PATH="${BASE_PATH}/LGF"
 export LOG_PATH="${BASE_PATH}/log"
-export SHARD_SIZE=3072
 
 if [ ! -d "$BASE_PATH" ]; then
     echo "Error: The base directory '$BASE_PATH' does not exist." >&2
