@@ -184,4 +184,4 @@ $ ./build/cuMatch <GRAPH_NAME> <GRAPH_PATH> <QUERY_PATH> \
 Contact
 --------
 
-If you have any questions, please create a GitHub issue or contact Sungwoo Park directly at sungwoo.park@kaist.ac.kr.
+If you have any questions, please create a GitHub issue or contact directly at <sungwoo.park@kaist.ac.kr>
