@@ -2,7 +2,7 @@
 
 This repository provides the implementation of **cuMatch**, a system that processes subgraph queries on GPUs using the worst-case optimal join (WCOJ) approach. 
 It includes scripts and tools to run the full Large-scale Complex Subgraph Query Benchmark (LSQB), which serves as the primary benchmark in our experimental evaluation.
-Beyond LSQB, cuMatch also provides a flexible framework that converts arbitrary graph data from CSV into the Labeled Grid Format (LGF) and executes user-defined subgraph queries, including those with complex patterns, in a memory-efficient GPU environment.
+Beyond LSQB, cuMatch also provides a flexible framework that converts arbitrary graph data from CSV into the **Labeled Grid Format (LGF)** and executes user-defined subgraph queries, including those with complex patterns, in a memory-efficient GPU environment.
 
 Prerequisite
 --------
@@ -118,7 +118,7 @@ $ ./build/cuMatch LGF_sample ./sample/LGF ./queries/sample-q3.json 1 1 n n y # o
 Evaluate LSQB Benchmark
 --------
 
-All datasets and outputs, including logs for each step, are stored under the `BASE_PATH` defined in `./scripts/vars.sh`. For SF=1000, up to 1.5TB of free disk space may be required. Expected logs and final results for all scale factors can be found [here](https://github.com/hellogaon/cuMatch/tree/main/results).
+All datasets and logs are stored under `BASE_PATH` defined in `./scripts/vars.sh`. For SF=1000, up to 1.5TB of free disk space may be required. Expected logs and final results for all scale factors can be found [here](https://github.com/hellogaon/cuMatch/tree/main/results).
 
 ### Step 1. Download & Preprocess Dataset
 
