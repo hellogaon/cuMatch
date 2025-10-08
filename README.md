@@ -98,7 +98,7 @@ $ docker build --tag cumatch .
 ```
 **4. Run Docker**
 ```
-# ./scripts/launch_cuMatch_docker.sh
+$ ./scripts/launch_cuMatch_docker.sh
 ```
 
 Run Sample Queries
