@@ -1,5 +1,6 @@
 #include <string>
 #include <fstream>
+#include <cstdint>
 
 class csv_ofstream {
 public:

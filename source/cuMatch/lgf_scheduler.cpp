@@ -1,6 +1,7 @@
 #include <cu_match/lgf_scheduler.h>
 #include <gstream/grid_format/detail/gridgen_utility.h>
 #include <stack>
+#include <algorithm>
 
 namespace cu_match {
 

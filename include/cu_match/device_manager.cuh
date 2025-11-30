@@ -12,6 +12,7 @@
 #include <atomic>
 #include <unordered_map>
 #include <condition_variable>
+#include <optional>
 
 namespace cu_match {
 

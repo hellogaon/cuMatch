@@ -2,6 +2,7 @@
 #define GSTREAM_GRID_FORMAT_DETAIL_EL32_OFSTREAM_H
 #include <string>
 #include <fstream>
+#include <cstdint>
 
 namespace gstream {
 namespace grid_format {
